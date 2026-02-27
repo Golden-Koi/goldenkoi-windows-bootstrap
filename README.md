@@ -39,8 +39,8 @@ You only need the keys for the platforms you actually use. Common examples:
 Nothing above is provided by this repo; you plug your own credentials into your own Clawdbot config.
 
 ## Tutorial / setup guide (recommended)
-If you want a step-by-step guide (and a ready-to-follow checklist), use our docs:
+- Official Clawdbot docs: https://docs.clawd.bot
 
-- Golden Koi guide: https://goldenkoi.trade (navigate to the Clawdbot / Hive guide)
-
-(Guide is optional; this repo remains a clean bootstrap.)
+## Optional: Golden Koi tutorial (coming soon)
+We plan to publish a step-by-step “Windows bootstrap → agent setup” guide later.
+(For now, please use the official Clawdbot docs above.)
