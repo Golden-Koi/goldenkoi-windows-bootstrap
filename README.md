@@ -26,3 +26,21 @@ irm https://raw.githubusercontent.com/Golden-Koi/goldenkoi-windows-bootstrap/mai
 This repo does **not** ship any tokens/credentials.
 
 After install, configure Clawdbot using Clawdbot’s own documentation and your own environment.
+
+## Recommended integrations (bring your own keys)
+You only need the keys for the platforms you actually use. Common examples:
+
+- **Telegram**: create a bot via @BotFather → get a **bot token**
+- **Discord**: create an application + bot → get a **bot token** (and add it to your server)
+- **Slack**: create an app → **Bot Token (xoxb-...)** and required scopes
+- **Cloudflare** (optional, for Pages / DNS automation): create an **API token** with least privilege
+- **Email** (optional): SMTP credentials or provider token
+
+Nothing above is provided by this repo; you plug your own credentials into your own Clawdbot config.
+
+## Tutorial / setup guide (recommended)
+If you want a step-by-step guide (and a ready-to-follow checklist), use our docs:
+
+- Golden Koi guide: https://goldenkoi.trade (navigate to the Clawdbot / Hive guide)
+
+(Guide is optional; this repo remains a clean bootstrap.)
