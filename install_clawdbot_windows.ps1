@@ -1,9 +1,9 @@
 <#
-Golden Koi Windows Bootstrap: Clawdbot (WSL2-first)
+Clawdbot Windows Bootstrap (WSL2-first)
 
 Goals:
 - Minimal interaction: single UAC prompt if needed
-- No secrets in repo: load env files from D:\secrets\*.env
+- No app-specific credentials, API keys, or secrets in this repo
 - Prefer WSL2 Ubuntu for running clawdbot gateway (Linux parity)
 
 This script is intentionally conservative (safe defaults).
@@ -72,7 +72,7 @@ function Install-Clawdbot {
 
 function Create-Task {
   Write-Section "Task Scheduler"
-  $taskName = "GoldenKoi-Clawdbot-Gateway"
+  $taskName = "Clawdbot-Gateway"
 
   # Start gateway inside Ubuntu (WSL). User can override config location in WSL as needed.
   $wslCmd = "wsl.exe -d Ubuntu -- bash -lc 'clawdbot gateway start'"
@@ -96,4 +96,4 @@ Install-Clawdbot
 Create-Task
 
 Write-Section "Done"
-Write-Host "Next: Put secrets under D:\\secrets\\ and configure clawdbot in WSL, then run: clawdbot gateway restart" -ForegroundColor Green
+Write-Host "Next: configure Clawdbot (tokens/credentials are NOT included in this repo), then run: clawdbot gateway restart" -ForegroundColor Green

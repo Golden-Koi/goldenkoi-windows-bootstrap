@@ -1,11 +1,11 @@
-# Golden Koi Windows Bootstrap (Clawdbot)
+# Clawdbot Windows Bootstrap
 
 One-command bootstrap to install **Clawdbot** on Windows (WSL2-first, production-friendly).
 
 ## Goals
 - Fast: minimal manual steps (only one UAC prompt if needed)
-- Safe: no secrets in repo; secrets are loaded from `D:\\secrets\\*.env`
-- Reproducible: pinned versions & explicit install steps
+- Safe: no app-specific credentials, API keys, or secrets in this repo
+- Reproducible: explicit install steps
 - Self-healing: Task Scheduler auto-start + restart strategy
 
 ## Quick start (PowerShell)
@@ -22,11 +22,7 @@ irm https://raw.githubusercontent.com/Golden-Koi/goldenkoi-windows-bootstrap/mai
 - WSL2 + Ubuntu (if missing)
 - Clawdbot (npm global)
 
-## Secrets
-Put secrets in `D:\\secrets\\` (not tracked by git). Example:
+## Configuration
+This repo does **not** ship any tokens/credentials.
 
-- `D:\\secrets\\clawdbot_telegram.env`
-- `D:\\secrets\\telegram_news_bot.env`
-
-## Notes
-This is a bootstrap repo for Golden Koi ops. You can fork it.
+After install, configure Clawdbot using Clawdbot’s own documentation and your own environment.
