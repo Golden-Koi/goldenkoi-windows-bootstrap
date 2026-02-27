@@ -33,13 +33,22 @@ You only need the keys for the platforms you actually use. Common examples:
 - **Telegram**: create a bot via @BotFather → get a **bot token**
 - **Discord**: create an application + bot → get a **bot token** (and add it to your server)
 - **Slack**: create an app → **Bot Token (xoxb-...)** and required scopes
-- **Cloudflare** (optional, for Pages / DNS automation): create an **API token** with least privilege
 - **Email** (optional): SMTP credentials or provider token
 
 Nothing above is provided by this repo; you plug your own credentials into your own Clawdbot config.
 
 ## Tutorial / setup guide (recommended)
 - Official Clawdbot docs: https://docs.clawd.bot
+
+## Optional API keys (bring your own)
+These are optional. Only get the keys you actually plan to use.
+
+- **Brave Search API** (web search): https://api.search.brave.com/
+- **Model provider** (pick one):
+  - OpenAI: https://platform.openai.com/
+  - Anthropic: https://console.anthropic.com/
+  - OpenRouter: https://openrouter.ai/
+- **Telegram Bot** (notifications): create via @BotFather
 
 ## Optional: Golden Koi tutorial (coming soon)
 We plan to publish a step-by-step “Windows bootstrap → agent setup” guide later.
